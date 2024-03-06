@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+
+<!-- 
+     .section - css공통용 , 뒤에 class 개발값
+ -->
+
+</head>
+
+<body>
+
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+        </header>
+        <!-- //header -->
+
+        <main id="container">
+            <!-- 본문 -->
+            <div id="content">
+
+                <!-- visual -->
+            <section id="subVisual">
+                <div class="naviBox">
+                    <div class="naviBoxWrap inner">
+                        <div class="navi">
+                            <ul>
+                                <li class="home"><a href="/"></a></li>
+                                <li>프로모션</li>
+                                <li>할인차 프로모션</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="mainTit loading"><strong><span>할</span><span>인</span><span>차</span><span>프</span><span>로</span><span>모</span><span>션</span></strong></h1>
+                <p>
+                    구매 절차를 차근차근 알려드립니다.
+                </p>
+                </section>
+    <!-- //visual -->
+    <!-- <div class="subSection_bg">
+        <h2>캐스퍼, 온라인에서만 구매할 수 있습니다.</h2>
+    </div> -->
+
+                <!-- 시작 -->
+                <!-- 페이지명 -->
+                <section class="section promotion" style="margin-top: 0; padding: 0;">
+                    <div class="inner">
+                        <!-- <div class="head" style="border-bottom: 1px solid #ddd; margin-bottom: 30px;">
+                            <div class="front">
+                                <h2 class="title" data-aos="fade-up">할인 특가전</h2>
+                                <p class="desc">서브타이틀</p>
+                            </div>
+                        </div> -->
+                        <div class="cont" style="border-top: 1px solid #ddd; padding-top: 25px;">
+                            
+           
+                             <!-- 필터 -->
+                             <div class="filter_box">
+                                <!-- 필터선택 -->
+                                <div class="cate">
+                                    <ul> <h2>차량검색<button id="reset-button"><div class="ico-reset"></div>초기화</button></h2></ul>
+                                    <ul id="filters">
+                                        <h2>엔진</h2>
+                                        <li><label><input type="radio" name="filter1" value="engine1" checked> 가솔린 1.0 터보</label></li>
+                                        <li><label><input type="radio" name="filter1" value="engine2"> 가솔린 1.0</label></li>
+                                    </ul>
+                                    <ul>
+                                        <h2>트림</h2> 
+                                        <li><label><input type="radio" name="filter2" value="trim1" checked> 스마트</label></li>
+                                        <li><label><input type="radio" name="filter2" value="trim2" > 스마트초이스</label></li>
+                                        <li><label><input type="radio" name="filter2" value="trim3" > 디 에센셜 라이트</label></li>
+                                        <li><label><input type="radio" name="filter2" value="trim4" > 디 에센셜</label></li>
+                                        <li><label><input type="radio" name="filter2" value="trim5" > 인스퍼레이션</label></li>
+                                    </ul>
+                                    <ul id="filter3">
+                                        <h2>외장색상</h2>
+                                        <li><label><input type="checkbox" name="filter3" value="color1" > 인텐스 블루 펄 </label></li>
+                                        <li><label><input type="checkbox" name="filter3" value="color2" > 소울트로릭 오렌지펄 </label></li>
+                                        <li><label><input type="checkbox" name="filter3" value="color3" > 언블리치드 아이보리 </label></li>
+                                        <li><label><input type="checkbox" name="filter3" value="color4" > 티탄 그레이 메탈릭 </label></li>
+                                        <li><label><input type="checkbox" name="filter3" value="color5" > 아틀라스 화이트 </label></li>
+                                        <li><label><input type="checkbox" name="filter3" value="color6" > 톰보이 카키 </label></li>
+                                        <li><label><input type="checkbox" name="filter3" value="color7" > 비자림 카키 매트 </label></li>
+                                    </ul>
+                                  <ul id="filter4">
+                                    <li><label><input type="checkbox" name="filter4" value="interior1" > 라이트 그레이 </label></li>
+                                    <li><label><input type="checkbox" name="filter4" value="interior2" > 다크그레이/라이트카키 </label></li>
+                                    <li><label><input type="checkbox" name="filter4" value="interior3" > 블랙 </label></li>
+                                  </ul>
+                                  <ul id="filter5">
+                                    <li><label><input type="checkbox" name="filter5" value="option1" > 선루프 </label></li>
+                                    <li><label><input type="checkbox" name="filter5" value="option2" > 루프랙 </label></li>
+                                    <li><label><input type="checkbox" name="filter5" value="option3" > 17인치 알로이 휠 </label></li>
+                                  </ul>
+                                </div>
+                                <!-- //필터선택 -->       
+
+                                <div class="filter_list" id="data">
+                        <!-- 반복 -->
+                        <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color4" data-filter4="interior1" data-filter5="option1">
+                            <div class="thumb"><img src="./images/color4.png"></div>
+                            <a href="#">
+                                <div class="cont">
+                                    <div class="top">
+                                        <em>캐스퍼</em>
+                                        <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스</strong></div>
+                                        <div class="opt">
+                                            <div class="option"><em>외장색상</em><span>티탄 그레이 메탈릭</span></div>
+                                            <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="price-cont"><span class="price"><span>13,800,000</span>원</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- //반복 -->
+                        <!-- 반복 -->
+                        <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color1" data-filter4="interior1" data-filter5="option1">
+                            <div class="thumb"><img src="./images/color1.png"></div>
+                            <a href="#">
+                                <div class="cont">
+                                    <div class="top">
+                                        <em>캐스퍼</em>
+                                        <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스</strong></div>
+                                        <div class="opt">
+                                            <div class="option"><em>외장색상</em><span>인텐스 블루 펄</span></div>
+                                            <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="price-cont"><span class="price"><span>15,400,000</span>원</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- //반복 -->
+                                     
+                                        <!-- 반복 -->
+                                        <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color2" data-filter4="interior1" data-filter5="option1">
+                                            <div class="thumb"><img src="./images/color2.png"></div>
+                                            <a href="#">
+                                                <div class="cont">
+                                                    <div class="top">
+                                                        <em>캐스퍼</em>
+                                                        <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스</strong></div>
+                                                        <div class="opt">
+                                                            <div class="option"><em>외장색상</em><span>소울트로릭 오렌지펄</span></div>
+                                                            <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="price-cont"><span class="price"><span>13,800,000</span>원</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    <!-- //반복 -->
+                                    <!-- 반복 -->
+                                    <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color1" data-filter4="interior1" data-filter5="option1">
+                                        <div class="thumb"><img src="./images/color1.png"></div>
+                                        <a href="#">
+                                            <div class="cont">
+                                                <div class="top">
+                                                    <em>캐스퍼</em>
+                                                    <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                                    <div class="opt">
+                                                        <div class="option"><em>외장색상</em><span>인텐스 블루 펄</span></div>
+                                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div class="price-cont"><span class="price"><span>12,300,000</span>원</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <!-- //반복 -->
+                                  <!-- 반복 -->
+                                  <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color4" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color4.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>티탄 그레이 메탈릭</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>16,900,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+                                   <!-- 반복 -->
+                                   <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color5.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>15,600,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+                                      <!-- 반복 -->
+                                      <div class="car_item" data-filter1="engine1" data-filter2="trim3" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                                        <div class="thumb"><img src="./images/color5.png"></div>
+                                        <a href="#">
+                                            <div class="cont">
+                                                <div class="top">
+                                                    <em>캐스퍼</em>
+                                                    <div class="tit"><strong class="name"> 가솔린 1.0 터보 디 에센셜 라이트 </strong></div>
+                                                    <div class="opt">
+                                                        <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div class="price-cont"><span class="price"><span>13,800,000</span>원</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <!-- //반복 -->
+                                 <!-- 반복 -->
+                                 <div class="car_item" data-filter1="engine1" data-filter2="trim3" data-filter3="color2" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color2.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 디 에센셜 라이트 </strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>소울트로릭 오렌지펄</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>14,500,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+                             <!-- 반복 -->
+                             <div class="car_item" data-filter1="engine1" data-filter2="trim3" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                                <div class="thumb"><img src="./images/color5.png"></div>
+                                <a href="#">
+                                    <div class="cont">
+                                        <div class="top">
+                                            <em>캐스퍼</em>
+                                            <div class="tit"><strong class="name"> 가솔린 1.0 터보 디 에센셜 라이트 </strong></div>
+                                            <div class="opt">
+                                                <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="price-cont"><span class="price"><span>17,800,000</span>원</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- //반복 -->
+
+                           <!-- 반복 -->
+                           <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color5" data-filter4="interior2" data-filter5="option1">
+                            <div class="thumb"><img src="./images/color5.png"></div>
+                            <a href="#">
+                                <div class="cont">
+                                    <div class="top">
+                                        <em>캐스퍼</em>
+                                        <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스 </strong></div>
+                                        <div class="opt">
+                                            <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                            <div class="option"><em>내장색상</em><span>다크그레이/라이트카키</span></div>
+                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="price-cont"><span class="price"><span>16,800,000</span>원</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- //반복 -->
+
+                      <!-- 반복 -->
+                      <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color5" data-filter4="interior2" data-filter5="option3">
+                        <div class="thumb"><img src="./images/color5.png"></div>
+                        <a href="#">
+                            <div class="cont">
+                                <div class="top">
+                                    <em>캐스퍼</em>
+                                    <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스 </strong></div>
+                                    <div class="opt">
+                                        <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                        <div class="option"><em>내장색상</em><span>다크그레이/라이트카키</span></div>
+                                        <div class="option"><em>선택품목</em><span>17인치 알로이 휠</span></div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-cont"><span class="price"><span>15,800,000</span>원</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!-- //반복 -->
+
+                          <!-- 반복 -->
+                          <div class="car_item" data-filter1="engine1" data-filter2="trim3" data-filter3="color6" data-filter4="interior2" data-filter5="option1">
+                            <div class="thumb"><img src="./images/color6.png"></div>
+                            <a href="#">
+                                <div class="cont">
+                                    <div class="top">
+                                        <em>캐스퍼</em>
+                                        <div class="tit"><strong class="name"> 가솔린 1.0 터보 디 에센셜 라이트 </strong></div>
+                                        <div class="opt">
+                                            <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                            <div class="option"><em>내장색상</em><span>다크그레이/라이트카키</span></div>
+                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="price-cont"><span class="price"><span>16,800,000</span>원</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- //반복 -->
+
+                    
+                          <!-- 반복 -->
+                          <div class="car_item" data-filter1="engine1" data-filter2="trim5" data-filter3="color6" data-filter4="interior1" data-filter5="option1">
+                            <div class="thumb"><img src="./images/color6.png"></div>
+                            <a href="#">
+                                <div class="cont">
+                                    <div class="top">
+                                        <em>캐스퍼</em>
+                                        <div class="tit"><strong class="name"> 가솔린 1.0 터보 인스퍼레이션 </strong></div>
+                                        <div class="opt">
+                                            <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                            <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="price-cont"><span class="price"><span>16,800,000</span>원</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- //반복 -->
+
+                       <!-- 반복 -->
+                       <div class="car_item" data-filter1="engine1" data-filter2="trim5" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                        <div class="thumb"><img src="./images/color5.png"></div>
+                        <a href="#">
+                            <div class="cont">
+                                <div class="top">
+                                    <em>캐스퍼</em>
+                                    <div class="tit"><strong class="name"> 가솔린 1.0 터보 인스퍼레이션 </strong></div>
+                                    <div class="opt">
+                                        <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-cont"><span class="price"><span>14,800,000</span>원</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!-- //반복 -->
+
+                                 <!-- 반복 -->
+                                 <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color1" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color1.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스 </strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>15,500,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->  
+                            
+                              <!-- 반복 -->
+                              <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color2" data-filter4="interior1" data-filter5="option1">
+                                <div class="thumb"><img src="./images/color2.png"></div>
+                                <a href="#">
+                                    <div class="cont">
+                                        <div class="top">
+                                            <em>캐스퍼</em>
+                                            <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                            <div class="opt">
+                                                <div class="option"><em>외장색상</em><span>소울트로릭 오렌지펄</span></div>
+                                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="price-cont"><span class="price"><span>13,800,000</span>원</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- //반복 --> 
+                            <!-- 반복 -->
+                                    <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color1" data-filter4="interior1" data-filter5="option1">
+                                        <div class="thumb"><img src="./images/color1.png"></div>
+                                        <a href="#">
+                                            <div class="cont">
+                                                <div class="top">
+                                                    <em>캐스퍼</em>
+                                                    <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                                    <div class="opt">
+                                                        <div class="option"><em>외장색상</em><span>인텐스 블루 펄</span></div>
+                                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div class="price-cont"><span class="price"><span>15,600,000</span>원</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <!-- //반복 --> 
+                                    <!-- 반복 -->
+                                    <div class="car_item" data-filter1="engine2" data-filter2="trim1" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                                        <div class="thumb"><img src="./images/color5.png"></div>
+                                        <a href="#">
+                                            <div class="cont">
+                                                <div class="top">
+                                                    <em>캐스퍼</em>
+                                                    <div class="tit"><strong class="name"> 가솔린 1.0 스마트</strong></div>
+                                                    <div class="opt">
+                                                        <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div class="price-cont"><span class="price"><span>14,100,000</span>원</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <!-- //반복 -->
+                                  <!-- 반복 -->
+                                  <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color7" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color7.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>비자림 카키 매트</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>17,800,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 --> 
+                             <!-- 반복 -->
+                             <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color4" data-filter4="interior1" data-filter5="option1">
+                                <div class="thumb"><img src="./images/color4.png"></div>
+                                <a href="#">
+                                    <div class="cont">
+                                        <div class="top">
+                                            <em>캐스퍼</em>
+                                            <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트</strong></div>
+                                            <div class="opt">
+                                                <div class="option"><em>외장색상</em><span>티탄 그레이 메탈릭</span></div>
+                                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="price-cont"><span class="price"><span>15,800,000</span>원</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- //반복 --> 
+                                <!-- 반복 -->
+                                 <div class="car_item" data-filter1="engine1" data-filter2="trim2" data-filter3="color1" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color1.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 초이스 </strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>13,800,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+                                  <!-- 반복 -->
+                                  <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color3" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color3.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 </strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>언블리치드 아이보리</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>16,700,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+                              <!-- 반복 -->
+                              <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                                <div class="thumb"><img src="./images/color5.png"></div>
+                                <a href="#">
+                                    <div class="cont">
+                                        <div class="top">
+                                            <em>캐스퍼</em>
+                                            <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 </strong></div>
+                                            <div class="opt">
+                                                <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="price-cont"><span class="price"><span>15,800,000</span>원</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- //반복 -->
+
+                                    <!-- 반복 -->
+                                    <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color6" data-filter4="interior1" data-filter5="option1 option2">
+                                        <div class="thumb"><img src="./images/color6.png"></div>
+                                        <a href="#">
+                                            <div class="cont">
+                                                <div class="top">
+                                                    <em>캐스퍼</em>
+                                                    <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 </strong></div>
+                                                    <div class="opt">
+                                                        <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                        <div class="option"><em>선택품목</em><span>선루프, 루프랙</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div class="price-cont"><span class="price"><span>12,800,000</span>원</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <!-- //반복 -->
+                                <!-- 반복 -->
+                                <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color2" data-filter4="interior1" data-filter5="option1 option2">
+                                    <div class="thumb"><img src="./images/color2.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 </strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>소울트릭 오렌지펄</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프, 루프랙</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>13,800,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+
+                                 <!-- 반복 -->
+                                 <div class="car_item" data-filter1="engine1" data-filter2="trim1" data-filter3="color6" data-filter4="interior1" data-filter5="option1">
+                                    <div class="thumb"><img src="./images/color6.png"></div>
+                                    <a href="#">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <em>캐스퍼</em>
+                                                <div class="tit"><strong class="name"> 가솔린 1.0 터보 스마트 </strong></div>
+                                                <div class="opt">
+                                                    <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                    <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price-cont"><span class="price"><span>17,500,000</span>원</span></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <!-- //반복 -->
+
+
+                              <!-- 반복 -->
+                              <div class="car_item" data-filter1="engine2" data-filter2="trim1" data-filter3="color1" data-filter4="interior1" data-filter5="option1">
+                                <div class="thumb"><img src="./images/color1.png"></div>
+                                <a href="#">
+                                    <div class="cont">
+                                        <div class="top">
+                                            <em>캐스퍼</em>
+                                            <div class="tit"><strong class="name"> 가솔린 1.0 스마트 </strong></div>
+                                            <div class="opt">
+                                                <div class="option"><em>외장색상</em><span>인텐스 블루 펄</span></div>
+                                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="price-cont"><span class="price"><span>16,680,000</span>원</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- //반복 -->
+                            <!-- 반복 -->
+                            <div class="car_item" data-filter1="engine2" data-filter2="trim1" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                                <div class="thumb"><img src="./images/color5.png"></div>
+                                <a href="#">
+                                    <div class="cont">
+                                        <div class="top">
+                                            <em>캐스퍼</em>
+                                            <div class="tit"><strong class="name"> 가솔린 1.0 스마트 </strong></div>
+                                            <div class="opt">
+                                                <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="price-cont"><span class="price"><span>17,600,000</span>원</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <!-- //반복 -->
+
+                         <!-- 반복 -->
+                         <div class="car_item" data-filter1="engine2" data-filter2="trim1" data-filter3="color6" data-filter4="interior2" data-filter5="option1">
+                            <div class="thumb"><img src="./images/color6.png"></div>
+                            <a href="#">
+                                <div class="cont">
+                                    <div class="top">
+                                        <em>캐스퍼</em>
+                                        <div class="tit"><strong class="name"> 가솔린 1.0 스마트 </strong></div>
+                                        <div class="opt">
+                                            <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                            <div class="option"><em>내장색상</em><span>다크그레이/라이트카키</span></div>
+                                            <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="price-cont"><span class="price"><span>14,500,000</span>원</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- //반복 -->
+                            
+                     <!-- 반복 -->
+                     <div class="car_item" data-filter1="engine2" data-filter2="trim1" data-filter3="color2" data-filter4="interior1" data-filter5="option1">
+                        <div class="thumb"><img src="./images/color2.png"></div>
+                        <a href="#">
+                            <div class="cont">
+                                <div class="top">
+                                    <em>캐스퍼</em>
+                                    <div class="tit"><strong class="name"> 가솔린 1.0 스마트 </strong></div>
+                                    <div class="opt">
+                                        <div class="option"><em>외장색상</em><span>소울트로릭 오렌지펄</span></div>
+                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-cont"><span class="price"><span>13,500,000</span>원</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!-- //반복 -->
+                    <!-- 반복 -->
+                    <div class="car_item" data-filter1="engine2" data-filter2="trim2" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                        <div class="thumb"><img src="./images/color5.png"></div>
+                        <a href="#">
+                            <div class="cont">
+                                <div class="top">
+                                    <em>캐스퍼</em>
+                                    <div class="tit"><strong class="name"> 가솔린 1.0 스마트 초이스 </strong></div>
+                                    <div class="opt">
+                                        <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                        <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                        <div class="option"><em>선택품목</em><span>선루프</span></div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="price-cont"><span class="price"><span>17,400,000</span>원</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <!-- //반복 -->
+                  <!-- 반복 -->
+                  <div class="car_item" data-filter1="engine2" data-filter2="trim2" data-filter3="color6" data-filter4="interior1" data-filter5="option3">
+                    <div class="thumb"><img src="./images/color6.png"></div>
+                    <a href="#">
+                        <div class="cont">
+                            <div class="top">
+                                <em>캐스퍼</em>
+                                <div class="tit"><strong class="name"> 가솔린 1.0 스마트 초이스 </strong></div>
+                                <div class="opt">
+                                    <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                    <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                    <div class="option"><em>선택품목</em><span>17인치 알로이 휠</span></div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="price-cont"><span class="price"><span>12,600,000</span>원</span></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- //반복 -->
+              <!-- 반복 -->
+              <div class="car_item" data-filter1="engine2" data-filter2="trim3" data-filter3="color5" data-filter4="interior1" data-filter5="option1">
+                <div class="thumb"><img src="./images/color5.png"></div>
+                <a href="#">
+                    <div class="cont">
+                        <div class="top">
+                            <em>캐스퍼</em>
+                            <div class="tit"><strong class="name"> 가솔린 1.0 디 에센셜 라이트 </strong></div>
+                            <div class="opt">
+                                <div class="option"><em>외장색상</em><span>톰보이 카키</span></div>
+                                <div class="option"><em>내장색상</em><span>라이트 그레이</span></div>
+                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="price-cont"><span class="price"><span>16,400,000</span>원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <!-- //반복 -->
+               <!-- 반복 -->
+               <div class="car_item" data-filter1="engine2" data-filter2="trim4" data-filter3="color5" data-filter4="interior3" data-filter5="option1">
+                <div class="thumb"><img src="./images/color5.png"></div>
+                <a href="#">
+                    <div class="cont">
+                        <div class="top">
+                            <em>캐스퍼</em>
+                            <div class="tit"><strong class="name"> 가솔린 1.0 디 에센셜 </strong></div>
+                            <div class="opt">
+                                <div class="option"><em>외장색상</em><span>아틀라스 화이트</span></div>
+                                <div class="option"><em>내장색상</em><span>블랙</span></div>
+                                <div class="option"><em>선택품목</em><span>선루프</span></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="price-cont"><span class="price"><span>14,700,000</span>원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <!-- //반복 -->
+                                  
+                                </div>
+                             
+                            </div>  
+                      
+                            <!-- <div class="no-results">선택된 필터와 일치하는 항목이 없습니다.</div> -->
+                             <!-- //필터 -->
+                         
+                            
+                            </div>
+                    </div>
+                </section>
+                <!-- //끝 -->
+
+                
+            </div>
+            <!-- //본문 -->
+        </main>
+        <div id="yg">
+        </div>
+        <!-- footer-->
+        <footer id="footer">
+        </footer>
+        <!-- //footer -->
+
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+
+    </script>
+
+</body>
+
+</html>

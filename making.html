@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
+    <!-- 
+     .section - css공통용 , 뒤에 class 개발값
+ -->
+
+</head>
+<body>
+    <p id="skipNav"><a href="#">본문바로가기</a></p>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+        <main id="container">
+            <!-- 본문 -->
+            <div id="content">
+                <section class="section making">
+                    <div class="content-inner">
+                        <div class="breadcrumb">
+                            <span class="home">홈</span>
+                            <span>차량 비교견적</span>
+                            <span>STEP2. 모델/옵션 선택</span>
+                        </div>
+                        <div class="page-head">
+                            <h2 class="content-title title ty1">모델/옵션 선택</h2>
+                            <ol class="list step">
+                                <li class="on fix">
+                                    <em class="num">1</em>
+                                    <span class="text">차량 선택</span>
+                                </li>
+                                <li class="on">
+                                    <em class="num">2</em>
+                                    <span class="text">모델/옵션 선택</span>
+                                </li>
+                                <li>
+                                    <em class="num">3</em>
+                                    <span class="text">견적 확인</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="car_info">
+                        <div class="content-inner">
+                            <div class="info_box">
+                                <div class="top">
+                                    <div class="logo">
+                                        <img src="images/logo-hyundai.png">
+                                    </div>
+                                    <p class="name">
+                                        캐스퍼
+                                    </p>
+                                    <div class="active-items">
+                                        <div class="item">SUV/RV</div>
+                                        <div class="item">가솔린</div>
+                                        <div class="item">1,000CC</div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="info-line">
+                                        <span class="qc">견적문의 <span>8,506</span></span>
+                                        <div class="logo">
+                                        </div>
+                                    </div>
+                                    <div class="btn-area type1">
+                                        <button class="gc-btn type3 c-type2 catalog" onclick="window.open('https://casper.hyundai.com/vehicles/catalog')"><span class="icon-type3">카탈로그</span></button>
+                                        <button class="gc-btn type3 c-type2 priceTag" onclick="window.open('https://casper.hyundai.com/wcontents/repn-car/catalog/AX02/AX_CASPER_price.pdf')"><span class="icon-type3">가격표</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car_move">
+                                <div class="thumb">
+                                    <img src="images/making_car.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 시작 -->
+                <!-- 페이지명 -->
+                <section class="section making">
+                    <div class="inner">
+                        <div class="cont" style="position: relative;">
+                            <div class="cont_left">
+                                <div class="build_area">
+                                    <form>
+                                        <h2>트림선택</h2>
+                                        <label for='trim1'>
+                                            <input type='radio' name='trim' value='13850000' id='trim1' onclick='getRadioText(event)' class="trim" />
+                                            <div class="box">
+                                                <span class="name">스마트</span><span class="rent">13,850,000원</span>
+                                            </div>
+                                        </label>
+                                        <label for='trim2'>
+                                            <input type='radio' name='trim' value='14900000' id='trim2' onclick='getRadioText(event)' class="trim" />
+                                            <div class="box">
+                                                <span class="name"> 디 에센셜 라이트</span><span class="rent">14,900,000원</span>
+                                            </div>
+                                        </label>
+                                        <label for='trim3'>
+                                            <input type='radio' name='trim' value='16900000' id='trim3' onclick='getRadioText(event)' class="trim" />
+                                            <div class="box">
+                                                <span class="name"> 디 에센셜</span><span class="rent">16,900,000원</span>
+                                            </div>
+                                        </label>
+                                        <label for='trim4'>
+                                            <input type='radio' name='trim' value='18700000' id='trim4' onclick='getRadioText(event)' class="trim" />
+                                            <div class="box">
+                                                <span class="name"> 인스퍼레이션</span><span class="rent">18,700,000원</span>
+                                            </div>
+                                        </label>
+                                        <div>
+                                            <h2>차량옵션</h2>
+                                            <label for='option1'>
+                                                <input type="checkbox" name="option" class="option" id="option1" onclick="calc()" value="950000">
+                                                <div class="box">
+                                                    <span class="name">캐스퍼 액티브</span><span class="rent">950,000원</span>
+                                                </div>
+                                            </label>
+                                            <label for='option2'>
+                                                <input type="checkbox" name="option" class="option" id="option2" onclick="calc()" value="400000">
+                                                <div class="box">
+                                                    <span class="name">선루프</span><span class="rent">400,000원</span>
+                                                </div>
+                                            </label>
+                                            <label for='option3'>
+                                                <input type="checkbox" name="option" class="option" id="option3" onclick="calc()" value="1520000">
+                                                <div class="box">
+                                                    <span class="name">스마트 플러스</span><span class="rent">1,520,000원</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <!-- <div id='option_result'></div> -->
+                                        <div class="color">
+                                            <h2>컬러</h2>
+                                            <label for='color1' class="w20">
+                                                <input class="color" id="color1" type="radio" name="color" onclick="calc1()" value="220000">
+                                                <div class="color_box color_bg1">
+                                                    <span class="name">언블리치드 아이보리 <em>+ 220,000원 추가</em></span>
+                                                </div>
+                                            </label>
+                                            <label for='color2' class="w20">
+                                                <input class="color" id="color2" type="radio" name="color" onclick="calc1()" value="320000">
+                                                <div class="color_box color_bg2">
+                                                    <span class="name">티탄 그레이 메탈릭 <em>+ 320,000원 추가</em></span>
+                                                </div>
+                                            </label>
+                                            <label for='color3' class="w20">
+                                                <input class="color" id="color3" type="radio" name="color" onclick="calc1()" value="0">
+                                                <div class="color_box color_bg3">
+                                                    <span class="name">아틀라스 화이트</span>
+                                                </div>
+                                            </label>
+                                            <label for='color4' class="w20">
+                                                <input class="color" id="color4" type="radio" name="color" onclick="calc1()" value="0">
+                                                <div class="color_box color_bg4">
+                                                    <span class="name">소울트로닉 오렌지 펄</span>
+                                                </div>
+                                            </label>
+                                            <label for='color5' class="w20">
+                                                <input class="color" id="color5" type="radio" name="color" onclick="calc1()" value="0">
+                                                <div class="color_box color_bg5">
+                                                    <span class="name">톰보이 카키</span>
+                                                </div>
+                                            </label>
+                                            <label for='color6' class="w20">
+                                                <input class="color" id="color6" type="radio" name="color" onclick="calc1()" value="0">
+                                                <div class="color_box color_bg6">
+                                                    <span class="name">인텐스 블루 펄</span>
+                                                </div>
+                                            </label>
+                                            <label for='color7' class="w20">
+                                                <input class="color" id="color7" type="radio" name="color" onclick="calc1()" value="0">
+                                                <div class="color_box color_bg7">
+                                                    <span class="name">비자림 카키 매트(무광)</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- <div id='result3'></div> -->
+                            </div>
+                            <!-- 오른쪽 -->
+                            <div class="cont_right">
+                                <div class="side_car">
+                                    <div class="cont">
+                                        <div class="cont_name">
+                                            <strong class="name" id="estimate_modelName">캐스퍼</strong>
+                                            <div class="thumb">
+                                                <img src="images/car01.png">
+                                            </div>
+                                        </div>
+                                        <div class="cont_inner">
+                                            <h3>트림</h3>
+                                            <div id='trim_result'>
+                                            </div>
+                                            <div id="trimNum" class="total" style="display: none;">
+                                            </div>
+                                            <h3 style="margin-top: 30px;">옵션</h3>
+                                            <div id="option_result">
+                                            </div>
+                                            <br>
+                                            <div id="optionNum" class="total" style="display: none;">
+                                            </div>
+                                            <h3 style="margin-top: 30px;">컬러</h3>
+                                            <div id="color_result">
+                                            </div>
+                                            <br>
+                                            <div id="colorNum" class="total" style="display: none;">
+                                            </div>
+                                            <br>
+                                            <input type="button" value="견적계산하기" onclick="add()" class="add">
+                                        
+                                      
+                                            <div class="total_box"><span>총 차량 가격</span>    <input type="text" id="total" class="total" onkeyup="inputNumberFormat(this);" placeholder="0원"></div>
+                                        
+
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 오른쪽 -->
+                       
+                        </div>
+                        </form>
+                    </div>
+                </section>
+                <!-- //끝 -->
+            </div>
+            <!-- //본문 -->
+        </main>
+        <!-- footer-->
+        <footer id="footer">
+        </footer>
+        <!-- //footer -->
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+
+        
+
+
+//////////////견적계산기
+
+
+
+    </script>
+</body>
+</html>
